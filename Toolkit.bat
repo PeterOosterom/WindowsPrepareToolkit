@@ -1,0 +1,1 @@
+start powershell -noexit -file ".\Office.ps1"
