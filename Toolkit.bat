@@ -1,1 +1,2 @@
-start powershell -noexit -noprofile -executionpolicy bypass -file ".\Office.ps1"
+Powershell.exe -Command Set-ExecutionPolicy Unrestricted -Scope Process; Powershell.exe -File ".\Office.ps1"
+
