@@ -1,1 +1,1 @@
-start powershell -noexit - ExecutionPolicy bypass -file ".\Office.ps1"
+start powershell -noexit -noprofile -executionpolicy bypass -file ".\Office.ps1"
