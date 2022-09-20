@@ -9,6 +9,7 @@ Chocolatey script to install software
 Set power settings
 # Usage
 Download .zip and extract contents to C:/
+
 Run Toolkit.bat
 
 # For testing purposes use the following script to reinstall bloatware:
