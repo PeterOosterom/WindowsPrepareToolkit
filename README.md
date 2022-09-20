@@ -3,6 +3,7 @@ A custom toolkit to remove bloatware and prepare a fresh windows install for dep
 the goal is a script which removes the standard microsoft Bs and install some default apps using chocolatey. Its used to deploy office pc's.
 # Working
 Removes Microsoft bloatware
+
 Chocolatey script to install software
 # To-do
 Set power settings
