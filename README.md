@@ -8,6 +8,8 @@ Removes Microsoft bloatware
 Chocolatey script to install software
 # To-do
 Set power settings
+
+Remove bs from start menu
 # Usage
 Download .zip and extract contents to C:/
 
