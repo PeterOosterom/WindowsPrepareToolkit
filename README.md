@@ -18,3 +18,7 @@ https://go.microsoft.com/fwlink/?LinkId=619547
 
 # Sources
 https://chocolatey.org/
+
+#Customizing
+Use to see all the windows store apps currently installed
+Get-AppxPackage | Select Name, PackageFullName
