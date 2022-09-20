@@ -10,7 +10,7 @@ Get-AppxProvisionedPackage -online | %{if ($_.packagename -match "Microsoft.Zune
 Get-AppxProvisionedPackage -online | %{if ($_.packagename -match "Microsoft.MicrosoftOffice") {$_ | Remove-AppxProvisionedPackage -AllUsers}}
 Get-AppxProvisionedPackage -online | %{if ($_.packagename -match "LinkedInforWindows") {$_ | Remove-AppxProvisionedPackage -AllUsers}}
 Get-AppxProvisionedPackage -online | %{if ($_.packagename -match "Microsoft.LinkedInforWindows") {$_ | Remove-AppxProvisionedPackage -AllUsers}}
-Get-AppxPackage | %{if ($_.name -match "MicrosoftTeams") {$_ | Remove-AppxPackage -AllUsers}}
+Get-AppxProvisionedPackage -online | %{if ($_.packagename -match "MicrosoftTeams") {$_ | Remove-AppxProvisionedPackage -AllUsers}}
 # Gets the list of 3rd party bloatware
 get-appxpackage | select name
 # Remove 3rd party bloatware
