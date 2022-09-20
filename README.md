@@ -7,10 +7,11 @@ Removes Microsoft bloatware
 
 Chocolatey script to install software
 
-Remove bs from start menu by replacing start.bin
+Removes pinned items from start menu by replacing start.bin
 # To-do
 Set power settings
 
+Remove search etc from taskbar
 
 # Usage
 Download .zip and extract contents to C:/
