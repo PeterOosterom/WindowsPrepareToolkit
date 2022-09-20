@@ -2,3 +2,6 @@
 C:\Office.ps1
 Start-Sleep -Seconds 5
 C:\Software.ps1
+Start-Sleep -Seconds 5
+C:\start.ps1
+
