@@ -6,10 +6,12 @@ By default it installs Adobe Reader, firefox, chrome and winrar. This can be cha
 Removes Microsoft bloatware
 
 Chocolatey script to install software
+
+Remove bs from start menu by replacing start.bin
 # To-do
 Set power settings
 
-Remove bs from start menu
+
 # Usage
 Download .zip and extract contents to C:/
 
