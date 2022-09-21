@@ -1,4 +1,3 @@
-
 # Get the list of Microsoft bloatware
 Get-AppxProvisionedPackage -online | select packagename
 # Remove Microsoft bloatware
