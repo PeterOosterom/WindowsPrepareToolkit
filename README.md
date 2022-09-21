@@ -11,8 +11,11 @@ Chocolatey script to install software
 Removes pinned items from start menu by replacing start.bin
 
 Changes the power settings to turn off monitor after 5 hours
-# To-do
+
 Remove search etc from taskbar
+
+# To-do
+
 
 # Usage
 Download .zip and extract contents to C:/
