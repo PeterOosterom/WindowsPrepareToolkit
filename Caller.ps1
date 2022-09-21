@@ -9,4 +9,9 @@ C:\Power.ps1
 Start-Sleep -Seconds 5
 C:\Taskbar.ps1
 Start-Sleep -Seconds 5
-Restart-Computer -Confirm:$true
+$input = Read-Host "Restart computer now [y/n]"
+switch($input){
+          y{Restart-computer -Force -Confirm:$false}
+          n{exit}
+    default{write-warning "Invalid Input"}
+}
