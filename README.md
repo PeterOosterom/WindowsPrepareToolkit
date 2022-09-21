@@ -1,7 +1,6 @@
 # WindowsPrepareToolkit
 A custom toolkit to remove bloatware and prepare a fresh windows 11 Pro install for deployment
 
-for a list of packages
 # Working
 Removes Microsoft bloatware
 
