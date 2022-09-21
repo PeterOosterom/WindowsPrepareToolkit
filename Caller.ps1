@@ -7,4 +7,6 @@ C:\Software.ps1
 Start-Sleep -Seconds 5
 C:\Power.ps1
 Start-Sleep -Seconds 5
+C:\Taskbar.ps1
+Start-Sleep -Seconds 5
 Restart-Computer
