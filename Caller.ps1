@@ -9,4 +9,4 @@ C:\Power.ps1
 Start-Sleep -Seconds 5
 C:\Taskbar.ps1
 Start-Sleep -Seconds 5
-Restart-Computer
+Restart-Computer -Confirm:$true
