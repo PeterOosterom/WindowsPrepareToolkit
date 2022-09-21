@@ -16,6 +16,7 @@ Remove search etc from taskbar
 
 # To-do
 
+Create .exe and gui
 
 # Usage
 Download .zip and extract contents to C:/
