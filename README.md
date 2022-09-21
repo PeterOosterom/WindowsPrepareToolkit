@@ -17,7 +17,7 @@ Remove search etc from taskbar
 # Usage
 Download .zip and extract contents to C:/
 
-https://www.youtube.com/channel/UCI6bWQLMSgTgUw6Fpyop2Gg
+https://www.youtube.com/watch?v=tipWCjapEXA&t=1s
 
 Run Toolkit.bat
 
