@@ -9,9 +9,9 @@ Removes Microsoft bloatware
 Chocolatey script to install software
 
 Removes pinned items from start menu by replacing start.bin
-# To-do
-Set power settings
 
+Changes the power settings to turn off monitor/device after 5 hours
+# To-do
 Remove search etc from taskbar
 
 # Usage
