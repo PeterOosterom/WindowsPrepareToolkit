@@ -1,6 +1,3 @@
-# Deprecated!
-Go to https://github.com/DigistateBV/WindowsPrepareToolkit
-
 # WindowsPrepareToolkit
 A custom toolkit to remove bloatware and prepare a fresh windows 11 Pro install for deployment
 
