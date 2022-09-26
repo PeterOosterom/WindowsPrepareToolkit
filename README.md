@@ -23,8 +23,6 @@ Download .zip and extract contents to C:/
 
 Run Toolkit.bat
 
-https://www.youtube.com/watch?v=tipWCjapEXA&t=1s
-
 
 # Sources
 https://chocolatey.org/
