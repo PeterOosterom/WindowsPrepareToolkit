@@ -25,8 +25,6 @@ Run Toolkit.bat
 
 https://www.youtube.com/watch?v=tipWCjapEXA&t=1s
 
-# For testing purposes use the following script to reinstall bloatware:
-https://go.microsoft.com/fwlink/?LinkId=619547
 
 # Sources
 https://chocolatey.org/
