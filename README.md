@@ -6,13 +6,15 @@ It reboots the machine when done
 # Working
 Removes Microsoft bloatware
 
-Chocolatey script to install software
+Remove search etc from taskbar
 
 Removes pinned items from start menu by replacing start.bin
 
+Chocolatey script to install software
+
 Changes the power settings to turn off monitor after 5 hours
 
-Remove search etc from taskbar
+
 
 # To-do
 
