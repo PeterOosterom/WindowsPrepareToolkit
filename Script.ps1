@@ -35,18 +35,18 @@ Set-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\
 # Removes search from the Taskbar
 Set-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Search -Name 'SearchboxTaskbarMode' -Type 'DWord' -Value 0
  
-#copies the downloaded start.bin to the correct folder
+# Copies the downloaded start.bin to the correct folder
 Copy-Item "c:\start.bin" "$($env:LOCALAPPDATA)\Packages\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\LocalState\start.bin" -force
 
-#Install Chocolatey
+# Install Chocolatey
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-#Install software
+# Install software
 choco install googlechrome -fy
 choco install firefox -fy
 choco install winrar -fy
 choco install adobereader -fy
 
-#Changes the power settings to turn off monitor after 5 hours
+# Changes the power settings to turn off monitor after 5 hours
 powercfg -change -monitor-timeout-dc 300
 powercfg -change -monitor-timeout-ac 300
 powercfg -change -standby-timeout-dc 0
