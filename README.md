@@ -6,7 +6,7 @@ It reboots the machine when done
 # Working
 Removes Microsoft bloatware
 
-Remove search etc from taskbar
+Remove search etc from taskbar (needs a reboot to work)
 
 Removes pinned items from start menu by replacing start.bin
 
