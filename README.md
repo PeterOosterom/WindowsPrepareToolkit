@@ -42,4 +42,4 @@ Get-AppxPackage | %{if ($_.name -match "Yourpackageofchoice.") {$_ | Remove-Appx
 By default it installs Adobe Reader, firefox, chrome and winrar. This can be changed by editing Software.ps1 Check https://community.chocolatey.org/packages
 
 
-This is a work in progress
+
