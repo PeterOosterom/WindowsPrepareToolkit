@@ -12,7 +12,7 @@ Chocolatey script to install software
 
 Changes the power settings to turn off monitor after 5 hours
 
-
+It asks for a reboot afterwards
 
 # To-do
 
