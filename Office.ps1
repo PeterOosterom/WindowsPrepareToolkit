@@ -19,3 +19,5 @@ Get-AppxPackage | %{if ($_.name -match "Microsoft.zune") {$_ | Remove-AppxPackag
 Get-AppxPackage | %{if ($_.name -match "microsoft.skypeapp") {$_ | Remove-AppxPackage -AllUsers}}
 Get-AppxPackage | %{if ($_.name -match "NORDCURRENT.COOKINGFEVER") {$_ | Remove-AppxPackage -AllUsers}}
 Get-AppxPackage | %{if ($_.name -match "Microsoft.MicrosoftSolitaireCollection") {$_ | Remove-AppxPackage -AllUsers}}
+
+# Removing the xbox app can cause strange issues for games
