@@ -14,9 +14,6 @@ Changes the power settings to turn off monitor after 5 hours
 
 It asks for a reboot afterwards
 
-# To-do
-
-Create .exe and gui
 
 # Usage
 Download .zip and extract contents to C:/
@@ -41,5 +38,11 @@ By default it installs Adobe Reader, firefox, chrome and winrar.
 
 This can be changed by editing Software.ps1 Check https://community.chocolatey.org/packages
 
+
+# Warning
+
+Dont use this on an old install. 
+
+This script removes the xbox app which can give weird issues when you eventually want to open a game
 
 
