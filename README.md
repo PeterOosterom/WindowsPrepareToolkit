@@ -45,4 +45,5 @@ Dont use this on an old install.
 
 This script removes the xbox app which can give weird issues when you eventually want to open a game
 
+Im not responsible for broken installs.
 
