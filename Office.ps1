@@ -3,7 +3,6 @@ Get-AppxProvisionedPackage -online | select packagename
 # Remove Microsoft bloatware
 Get-AppxProvisionedPackage -online | %{if ($_.packagename -match "Microsoft.Office.Desktop") {$_ | Remove-AppxProvisionedPackage -AllUsers}}
 Get-AppxProvisionedPackage -online | %{if ($_.packagename -match "Microsoft.Office.OneNote") {$_ | Remove-AppxProvisionedPackage -AllUsers}}
-Get-AppxProvisionedPackage -online | %{if ($_.packagename -match "Microsoft.Xbox") {$_ | Remove-AppxProvisionedPackage -AllUsers}}
 Get-AppxProvisionedPackage -online | %{if ($_.packagename -match "Microsoft.SkypeApp") {$_ | Remove-AppxProvisionedPackage -AllUsers}}
 Get-AppxProvisionedPackage -online | %{if ($_.packagename -match "Microsoft.Zune") {$_ | Remove-AppxProvisionedPackage -AllUsers}}
 Get-AppxProvisionedPackage -online | %{if ($_.packagename -match "Microsoft.MicrosoftOffice") {$_ | Remove-AppxProvisionedPackage -AllUsers}}
@@ -19,5 +18,3 @@ Get-AppxPackage | %{if ($_.name -match "Microsoft.zune") {$_ | Remove-AppxPackag
 Get-AppxPackage | %{if ($_.name -match "microsoft.skypeapp") {$_ | Remove-AppxPackage -AllUsers}}
 Get-AppxPackage | %{if ($_.name -match "NORDCURRENT.COOKINGFEVER") {$_ | Remove-AppxPackage -AllUsers}}
 Get-AppxPackage | %{if ($_.name -match "Microsoft.MicrosoftSolitaireCollection") {$_ | Remove-AppxPackage -AllUsers}}
-
-# Removing the xbox app can cause strange issues for games
