@@ -41,8 +41,8 @@ This can be changed by editing Software.ps1 Check https://community.chocolatey.o
 
 # Warning
 
-Dont use this on an old install. 
+Don't use this on an old install. 
 
 
-Im not responsible for broken installs.
+I'm not responsible for broken installs.
 
