@@ -1,3 +1,5 @@
+22h2 update broke it
+
 # WindowsPrepareToolkit
 A custom toolkit to remove bloatware and prepare a fresh windows 11 Pro install for deployment
 
