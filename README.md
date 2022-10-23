@@ -22,6 +22,10 @@ Download .zip and extract contents to C:/
 
 Run Toolkit.bat
 
+# todo
+
+Remove vendor bloat
+
 
 # Sources
 https://chocolatey.org/
