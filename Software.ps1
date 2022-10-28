@@ -5,3 +5,4 @@ choco install googlechrome -fy
 choco install firefox -fy
 choco install winrar -fy
 choco install adobereader -fy
+choco install teamviewer-qs -fy
