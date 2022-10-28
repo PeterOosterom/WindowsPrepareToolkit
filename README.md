@@ -41,7 +41,7 @@ To delete the package add the following to Office.ps1 change yourpackageofchoice
 Get-AppxPackage | %{if ($_.name -match "Yourpackageofchoice.") {$_ | Remove-AppxPackage -AllUsers}}
 
 
-By default it installs Adobe Reader, firefox, chrome and winrar. 
+By default it installs Adobe Reader, firefox, chrome teamviewer quicksupport and winrar. 
 
 This can be changed by editing Software.ps1 Check https://community.chocolatey.org/packages
 
