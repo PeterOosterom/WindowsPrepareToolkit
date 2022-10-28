@@ -9,7 +9,7 @@ Removes Microsoft bloatware
 Remove search etc from taskbar (needs a reboot to work)
 
 Removes pinned items from start menu by replacing start.bin
-
+#doesnt work anymore on 22h2
 Chocolatey script to install software
 
 Changes the power settings to turn off monitor after 5 hours
