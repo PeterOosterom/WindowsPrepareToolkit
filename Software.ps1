@@ -6,3 +6,4 @@ choco install firefox -fy
 choco install winrar -fy
 choco install adobereader -fy
 choco install teamviewer-qs -fy
+choco install jre8 -fy
