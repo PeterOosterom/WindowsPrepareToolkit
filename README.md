@@ -45,6 +45,12 @@ By default it installs Adobe Reader, firefox, chrome teamviewer quicksupport and
 
 This can be changed by editing Software.ps1 Check https://community.chocolatey.org/packages
 
+# Ideas
+
+Maybe a downloader? So instead of just downloading and dumping a load of scripts in c:\ it would just download those files and delete them afterwards
+
+Choose which bloatware to delete
+
 
 # Warning
 
