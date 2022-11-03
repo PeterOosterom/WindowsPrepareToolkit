@@ -21,6 +21,8 @@ Download .zip and extract contents to C:/
 
 Run Toolkit.bat
 
+It requires privaleges
+
 # todo
 
 Remove vendor bloat
