@@ -54,7 +54,7 @@ Choose which bloatware to delete
 
 # Warning
 
-Don't use this on an old install. 
+Don't use this on an old install. It will break stuff
 
 
 I'm not responsible for broken installs.
