@@ -10,17 +10,17 @@
 .LINK
     https://github.com/SCUR0/PowerShell-Scripts
 #>
-
+ 
 [cmdletbinding()]
 param ()
-
+ 
 If (!([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).`
       IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")){
         Write-Error "Admin permissions are required to run this script. Please open powershell as administrator."
         pause
         break
 }
-
+ 
 #Variables
 $Errors=$null
 $RebootTaskError=$null
@@ -34,8 +34,8 @@ $FileAdminRule = New-Object System.Security.AccessControl.filesystemaccessrule (
 $FileSystemRule = New-Object System.Security.AccessControl.filesystemaccessrule ("System","ReadAndExecute","Allow")
 $FileUserRule = New-Object System.Security.AccessControl.filesystemaccessrule ($env:USERNAME,"FullControl","Allow")
 $owner = [Security.Principal.NTAccount]$env:USERNAME
-
-
+ 
+ 
 Function Enable-Privilege {
   param($Privilege)
   $Definition = @'
@@ -80,14 +80,14 @@ public class AdjPriv {
   $type = Add-Type $definition -PassThru
   $type[0]::EnablePrivilege($processHandle, $Privilege)
 }
-
+ 
 #verify task is created
 If (!(test-path $RebootTask)){
     Write-Output "Reboot task has to first be created by windows update in order to disable. Please run script after first cumulative update."
 }else{
     do {} until (Enable-Privilege SeTakeOwnershipPrivilege)
-
-
+ 
+ 
     #SET ACL for registry key
     #Set ownership
     Write-Verbose "Modifying registry keys." -Verbose
@@ -98,22 +98,20 @@ If (!(test-path $RebootTask)){
         Write-Warning "Error encountered while trying to modify registry for reboot"
         $Errors=$true
     }else{
-        $RegACL.SetOwner($owner)
-        $key.SetAccessControl($RegACL)
-
+         
         #Modify permissions
         $RegACL = $key.GetAccessControl()
         $RegACL.ResetAccessRule($RegAdminRule)
         $RegACL.SetAccessRule($RegSystemRule)
         $RegACL.SetAccessRule($RegUserRule)
         $key.SetAccessControl($RegACL)
-
+ 
         #remove inheritance
         $RegACL = Get-Acl -Path $RebootReg
         $RegACL.SetAccessRuleProtection($true,$false)
         $RegACL | Set-Acl
     }
-
+ 
     #SET ACL for task file
     #Change owner
     Write-Verbose "Modifying scheduled task files." -Verbose
@@ -124,12 +122,12 @@ If (!(test-path $RebootTask)){
     }else{
         $FileACL.SetOwner($owner)
         Set-Acl -Path $RebootTask -AclObject $FileACL
-
-        #remove inheritance 
+ 
+        #remove inheritance
         $FileACL = Get-Acl -Path $RebootTask
         $FileACL.SetAccessRuleProtection($true,$false)
         $FileACL | Set-Acl -ErrorAction Stop
-
+ 
         #remove and set permissions
         $FileACL = Get-ACL -Path $RebootTask
         $FileACL.Access | %{$FileACL.RemoveAccessRule($_)} |Out-Null
@@ -151,10 +149,10 @@ If (!(test-path $RebootTask)){
             Write-Verbose "Restricting security permisions on registry and task file." -Verbose
             $RegACL.RemoveAccessRule($RegAdminRule) | Out-Null
             $key.SetAccessControl($RegACL)
-
+ 
             $FileACL.RemoveAccessRule($FileAdminRule) | Out-Null
             Set-Acl -Path $RebootTask -AclObject $FileACL
-
+ 
             Write-Verbose "Script complete." -Verbose
             Write-Warning "Script will need to be run again after a feature (new windows build) update."
         }
