@@ -98,7 +98,9 @@ If (!(test-path $RebootTask)){
         Write-Warning "Error encountered while trying to modify registry for reboot"
         $Errors=$true
     }else{
-         
+        $RegACL.SetOwner($owner)
+        $key.SetAccessControl($RegACL)
+
         #Modify permissions
         $RegACL = $key.GetAccessControl()
         $RegACL.ResetAccessRule($RegAdminRule)
